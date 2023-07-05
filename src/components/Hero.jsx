@@ -7,13 +7,13 @@ const Hero = () => {
   return (
     <section id="herosection">
       <div className="container  max-w-6xl mx-auto px-10 py-8 text-black  h-auto">
-        <div className="flex flex-col space-y-10 items-center justify-center md:flex-row md:space-x-10 md:space-y-0">
-          <div className=" w-2/4 h-96 flex flex-col justify-between">
+        <div className=" flex flex-col space-y-10 items-center justify-center md:flex-row md:space-x-10 md:space-y-0">
+          <div className="w-2/4 h-fit flex flex-col justify-between">
             <div className="text-5xl font-extrabold w-4/5">
               PURCHASE YOUR <u>SHOES</u> NOW.
             </div>
 
-            <div>
+            <div className="mt-12 mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dalar
               morbi velt turpis et dolor sit morbi odio id. Aliquam ultricies
               tortor ac.
@@ -27,10 +27,10 @@ const Hero = () => {
                 }}>
                 Shop Now
               </div>
-              <div className="w-64 absolute z-20 -bottom-28 left-52">
+              <div className="w-64 relative z-20 bottom-3 left-28">
                 <img src="assests/arrow.png" alt="" srcset="" />
               </div>
-              <div className="w-fit h-fit flex flex-col justify-between items-center p-1 absolute -z-0 left-1/3 -bottom-16 ml-5">
+              <div className="w-fit h-fit flex flex-col justify-between items-center p-1 relative -z-0 bottom-24 left-80 ml-7">
                 <div className="flex flex-row items-center h-5">
                   <div className="font-semibold text-lg h-fit">4.3</div>
                   <div className="flex flex-row w-24 justify-between ml-1 h-fit">
@@ -44,7 +44,8 @@ const Hero = () => {
                       stroke="#E142AA"
                       fill="red"
                       stroke-linecap="round"
-                      stroke-linejoin="round">
+                      stroke-linejoin="round"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path
                         d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
@@ -62,7 +63,8 @@ const Hero = () => {
                       stroke="#2c3e50"
                       fill="none"
                       stroke-linecap="round"
-                      stroke-linejoin="round">
+                      stroke-linejoin="round"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path
                         d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
@@ -80,7 +82,8 @@ const Hero = () => {
                       stroke="#2c3e50"
                       fill="none"
                       stroke-linecap="round"
-                      stroke-linejoin="round">
+                      stroke-linejoin="round"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path
                         d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
@@ -98,7 +101,8 @@ const Hero = () => {
                       stroke="#2c3e50"
                       fill="none"
                       stroke-linecap="round"
-                      stroke-linejoin="round">
+                      stroke-linejoin="round"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path
                         d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
@@ -116,7 +120,8 @@ const Hero = () => {
                       stroke="#2c3e50"
                       fill="none"
                       stroke-linecap="round"
-                      stroke-linejoin="round">
+                      stroke-linejoin="round"
+                    >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path
                         d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
