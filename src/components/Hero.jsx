@@ -4,13 +4,13 @@ const Hero = () => {
   return (
     <section id="herosection">
       <div className="container  max-w-6xl mx-auto px-10 py-8 text-black  h-auto">
-        <div className="flex flex-col space-y-10 items-center justify-center md:flex-row md:space-x-10 md:space-y-0">
-          <div className=" w-2/4 h-96 flex flex-col justify-between">
+        <div className=" flex flex-col space-y-10 items-center justify-center md:flex-row md:space-x-10 md:space-y-0">
+          <div className="w-2/4 h-fit flex flex-col justify-between">
             <div className="text-5xl font-extrabold w-4/5">
               PURCHASE YOUR <u>SHOES</u> NOW.
             </div>
 
-            <div>
+            <div className="mt-12 mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dalar
               morbi velt turpis et dolor sit morbi odio id. Aliquam ultricies
               tortor ac.
