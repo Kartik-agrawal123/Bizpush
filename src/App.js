@@ -7,6 +7,7 @@ function App() {
     <>
       <div className="bg-gradient-to-r from-customRed to-customBlue">
         <NavBar />
+        <Hero />
       </div>
     </>
   );
