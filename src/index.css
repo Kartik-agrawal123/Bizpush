@@ -7,3 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.grad {
+  background-image: linear-gradient(to right, #ffdcf3, #d7ffff);
+}
