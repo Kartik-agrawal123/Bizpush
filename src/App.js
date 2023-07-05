@@ -1,10 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
-      <div className=" text-6xl">hello,world!</div>
+      <section id="navbar">
+        <div className="container max-w-6xl mx-auto px-10 py-8">Hello</div>
+      </section>
+      <Hero />
     </>
   );
 }
