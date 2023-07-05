@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section id="herosection">
-      <div className="container flex flex-row items-center justify-between max-w-6xl mx-auto px-10 py-8 text-black bg-red-500 h-auto">
+      <div className="container flex flex-row items-center justify-between max-w-6xl mx-auto px-10 py-8 text-black  h-auto">
         <div className=" w-2/4 h-96 flex flex-col justify-between">
           <div className="text-5xl font-extrabold w-4/5">
             PURCHASE YOUR <u>SHOES</u> NOW.
