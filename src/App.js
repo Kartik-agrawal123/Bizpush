@@ -1,16 +1,23 @@
 import "./App.css";
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import ShopScreen from "./screens/ShopScreen";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    children: [
+      { index: true, element: <HomeScreen /> },
+      {
+        path: "/shop",
+        element: <ShopScreen />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <div className="bg-gradient-to-r from-customRed to-customBlue">
-        <NavBar />
-        <Hero />
-      </div>
-    </>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;

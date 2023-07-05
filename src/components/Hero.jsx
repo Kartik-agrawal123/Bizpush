@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom/dist";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="herosection">
       <div className="container  max-w-6xl mx-auto px-10 py-8 text-black  h-auto">
@@ -17,7 +20,11 @@ const Hero = () => {
             </div>
 
             <div className="w-full h-24">
-              <div className="bg-white w-36 h-12 flex items-center justify-center rounded-lg drop-shadow-xl relative z-10">
+              <div
+                className="bg-white w-36 h-12 flex hover:cursor-pointer items-center justify-center rounded-lg drop-shadow-xl relative z-10"
+                onClick={() => {
+                  navigate("/shop");
+                }}>
                 Shop Now
               </div>
               <div className="w-64 absolute z-20 -bottom-28 left-52">
