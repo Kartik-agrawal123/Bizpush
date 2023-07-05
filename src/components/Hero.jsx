@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section id="herosection">
-      <div className="container flex flex-row items-center justify-between max-w-6xl mx-auto px-10 py-8 text-black bg-red-500 h-full">
+      <div className="container flex flex-row items-center justify-between max-w-6xl mx-auto px-10 py-8 text-black bg-red-500 h-auto">
         <div className=" w-2/4 h-96 flex flex-col justify-between">
           <div className="text-5xl font-extrabold w-4/5">
             PURCHASE YOUR <u>SHOES</u> NOW.
@@ -14,14 +14,14 @@ const Hero = () => {
             velt turpis et dolor sit morbi odio id. Aliquam ultricies tortor ac.
           </div>
 
-          <div className=" w-full h-24">
+          <div className="w-full h-24">
             <div className="bg-white w-36 h-12 flex items-center justify-center rounded-lg drop-shadow-xl relative z-10">
               Shop Now
             </div>
-            <div className="w-64 absolute z-20 -bottom-16 left-52">
+            <div className="w-64 absolute z-20 -bottom-28 left-52">
               <img src="assests/arrow.png" alt="" srcset="" />
             </div>
-            <div className="w-fit h-fit flex flex-col justify-between items-end p-1 absolute -z-0 left-1/3 -bottom-4">
+            <div className="w-fit h-fit flex flex-col justify-between items-center p-1 absolute -z-0 left-1/3 -bottom-16 ml-5">
               <div className="flex flex-row items-center h-5">
                 <div className="font-semibold text-lg h-fit">4.3</div>
                 <div className="flex flex-row w-24 justify-between ml-1 h-fit">
@@ -127,11 +127,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className=" w-2/4 h-full">
-          <div className="drop-shadow-lg relative z-0 w-fit">
+        <div className="flex flex-col justify-between w-2/4 h-auto">
+          <div className="drop-shadow-lg z-0 w-fit mb-5">
             <img src="assests/shoe1.png" alt="shoes image" srcset="" />
           </div>
-          <div className="absolute z-10 right-24 h-fit w-fit rounded-lg grad p-1">
+          <div className="z-10 right-24 h-fit w-fit rounded-lg grad p-1 ml-auto">
             <div className="bg-white h-fit w-fit p-3 justify-center items-center rounded-lg">
               <div className="font-bold text-base ">GET UPTO 30% OFF</div>
               <div className="text-xs pt-2">
