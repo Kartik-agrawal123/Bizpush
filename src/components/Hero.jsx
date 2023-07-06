@@ -21,16 +21,17 @@ const Hero = () => {
 
             <div className="w-full h-24">
               <div
-                className="bg-white w-36 h-12 flex hover:cursor-pointer items-center justify-center rounded-lg drop-shadow-xl relative z-10"
+                className="bg-white w-36 h-12 flex hover:cursor-pointer items-center justify-center rounded-lg drop-shadow-xl relative z-10 "
                 onClick={() => {
                   navigate("/shop");
-                }}>
+                }}
+              >
                 Shop Now
               </div>
-              <div className="w-64 relative z-20 bottom-3 left-28">
+              <div className="w-64 relative z-20 bottom-16 left-28">
                 <img src="assests/arrow.png" alt="" srcset="" />
               </div>
-              <div className="w-fit h-fit flex flex-col justify-between items-center p-1 relative -z-0 bottom-24 left-80 ml-7">
+              <div className="w-fit h-fit flex flex-col justify-between items-center p-1 relative -z-0 bottom-36 left-80 ml-7">
                 <div className="flex flex-row items-center h-5">
                   <div className="font-semibold text-lg h-fit">4.3</div>
                   <div className="flex flex-row w-24 justify-between ml-1 h-fit">
