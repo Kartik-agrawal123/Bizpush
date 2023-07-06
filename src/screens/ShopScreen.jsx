@@ -122,7 +122,7 @@ const ShopScreen = () => {
         <div className="border-t-2 border-gray-500 py-2"></div>
         {/* product actions */}
         <ProductAction />
-        <div className="flex justify-between space-x-10 container px-10 py-4">
+        <div className="flex justify-between space-x-10 ">
           <div className="container w-full h-auto grid grid-cols-4 gap-3">
             {
               carts.map((elem) => {
