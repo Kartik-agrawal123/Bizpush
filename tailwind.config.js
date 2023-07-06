@@ -11,6 +11,7 @@ module.exports = {
         customBlue: "#D7FFFF",
         textColorRed: "#E142AA",
         textColorBlue: "#73FFFF",
+        myColor: "red",
       },
     },
   },
