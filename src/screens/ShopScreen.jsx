@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import SideBarMenu from "../components/SideBarMenu";
 import ProductStatus from "../components/ProductStatus";
 import ProductAction from "../components/ProductAction";
+import CheckBox from "../components/CheckBox";
 import ProductGraph from "../components/ProductGraph";
+import ProductList from "../components/ProductList";
 
 const ShopScreen = () => {
   return (
@@ -61,7 +63,9 @@ const ShopScreen = () => {
           {/* product actions */}
           <ProductAction />
           <div className="flex justify-between space-x-10 container px-10 py-4">
-            <div>Product List</div>
+            <div>
+              <ProductList />
+            </div>
             <div>
               <ProductGraph />
             </div>
