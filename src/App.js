@@ -1,20 +1,23 @@
 import "./App.css";
-import Cart from "./components/Cart";
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
-import PopularProduct from "./components/PopularProduct";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import ShopScreen from "./screens/ShopScreen";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    children: [
+      { index: true, element: <HomeScreen /> },
+      {
+        path: "/shop",
+        element: <ShopScreen />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <div className="bg-gradient-to-r from-customRed to-customBlue">
-        <NavBar />
-        <Hero />
-        <PopularProduct />
-      </div>
-      {/* <Cart/> */}
-    </>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
