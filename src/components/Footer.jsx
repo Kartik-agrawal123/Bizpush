@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-10">
       <div className="p-6 md:p-10 grid grid-cols-1 gap-y-8 md:grid-cols-5 bg-white">
         <div className="flex space-x-4 items-center justify-center">
           <img src={chargeImg} alt="logo" className="w-8" />
