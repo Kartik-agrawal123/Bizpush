@@ -2,69 +2,7 @@ import React from "react";
 import { useState } from "react";
 import CheckBox from "./CheckBox";
 import ProductGraph from "./ProductGraph";
-
-const Carts = [
-  {
-    id: "1",
-    image: "/assests/airpods.png",
-    name: "Apple AirPods 2",
-  },
-  {
-    id: "2",
-    image: "/assests/watch.png",
-    name: "Samsung Smart Watch",
-  },
-  {
-    id: "3",
-    image: "/assests/pc.png",
-    name: "Apple Macbook Pro",
-  },
-  {
-    id: "4",
-    image: "/assests/watch.png",
-    name: "Samsung Smart Watch",
-  },
-  {
-    id: "5",
-    image: "/assests/phone.png",
-    name: "Google Pixel 4 XL",
-  },
-  {
-    id: "6",
-    image: "/assests/airpods.png",
-    name: "Amazon Smart Speaker",
-  },
-  {
-    id: "7",
-    image: "/assests/laptop.png",
-    name: "Apple Macbook Pro 18",
-  },
-  {
-    id: "8",
-    image: "/assests/laptop.png",
-    name: "Apple IPad 2",
-  },
-  {
-    id: "9",
-    image: "/assests/airpods.png",
-    name: "Microsoft Surface Book",
-  },
-  {
-    id: "10",
-    image: "/assests/airpods.png",
-    name: "Google",
-  },
-  {
-    id: "11",
-    image: "/assests/laptop.png",
-    name: "Apple Mac Pro",
-  },
-  {
-    id: "12",
-    image: "/assests/watch.png",
-    name: "Samsung Smart Watch",
-  },
-];
+import {Carts} from "../Constraint";
 
 const ProductList = () => {
   const [carts, setCarts] = useState(Carts);

@@ -1,35 +1,5 @@
 import React, { useState } from "react";
-
-const Content = [
-  {
-    id: 1,
-    image: "/assests/shoe2.png",
-    name: "Nike Running Shoe",
-    price: "$100",
-    lineThrough: "500 Sold Out"
-  },
-  {
-    id: 2,
-    image: "/assests/shoe3.png",
-    name: "Nike Shoe Airmax",
-    price: "$115",
-    lineThrough: "50 Sold Out"
-  },
-  {
-    id: 3,
-    image: "/assests/shoe2.png",
-    name: "Jordan Sneaker",
-    price: "$50",
-    lineThrough: "1500 Sold Out"
-  },
-  {
-    id: 4,
-    image: "/assests/shoe3.png",
-    name: "Nike Running Shoe 2",
-    price: "$200",
-    lineThrough: "210 Sold Out"
-  }
-];
+import {Content} from "../Constraint";
 
 const PopularProduct = () => {
   const [items, setItems] = useState(Content);
