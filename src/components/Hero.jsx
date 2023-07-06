@@ -28,7 +28,7 @@ const Hero = () => {
                   }}>
                   Shop Now
                 </div>
-                <div className="w-fit h-fit mt-8 md:justify-center lg:hidden md:flex flex-col justify-between items-center p-1 ">
+                <div className="w-fit h-fit mt-8 md:justify-center md:hidden flex flex-col justify-between items-center p-1 ">
                   <div className="flex flex-row items-center h-5">
                     <div className="font-semibold text-lg h-fit">4.3</div>
                     <div className="flex flex-row w-24 justify-between ml-1 h-fit">
@@ -127,10 +127,10 @@ const Hero = () => {
                   <div className="text-xs">(11.6k Total Reviews)</div>
                 </div>
 
-                <div className="w-64 hidden lg:block absolute z-20 -top-2 left-24">
+                <div className="w-64 hidden md:block  absolute z-20 -top-2 left-24">
                   <img src="assests/arrow.png" alt="" srcset="" />
                 </div>
-                <div className="w-fit h-fit absolute top-20 left-80 ml-4 hidden lg:flex flex-col justify-between items-center p-1 ">
+                <div className="w-fit h-fit absolute top-20 left-80 ml-4 hidden md:flex flex-col justify-between items-center p-1 ">
                   <div className="flex flex-row items-center h-5">
                     <div className="font-semibold text-lg h-fit">4.3</div>
                     <div className="flex flex-row w-24 justify-between ml-1 h-fit">
