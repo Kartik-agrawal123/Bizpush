@@ -31,7 +31,7 @@ const ShopScreen = () => {
                 <ProductStatus status="select" />
               </div>
               <div className="flex items-center">
-                <button className="flex justify-center space-x-2 items-center rounded-lg shadow-lg bg-violet-700 px-4 py-2 hover:opacity-60">
+                <button className=" flex justify-center space-x-2 items-center rounded-full shadow-lg bg-violet-700 px-4 py-2 hover:opacity-60">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-square-rounded-plus"
