@@ -1,38 +1,7 @@
-import React, { useState } from "react";
-
-const Content = [
-  {
-    id: 1,
-    image: "/assests/shoe2.png",
-    name: "Nike Running Shoe",
-    price: "$100",
-    lineThrough: "500 Sold Out",
-  },
-  {
-    id: 2,
-    image: "/assests/shoe3.png",
-    name: "Nike Shoe Airmax",
-    price: "$115",
-    lineThrough: "50 Sold Out",
-  },
-  {
-    id: 3,
-    image: "/assests/shoe2.png",
-    name: "Jordan Sneaker",
-    price: "$50",
-    lineThrough: "1500 Sold Out",
-  },
-  {
-    id: 4,
-    image: "/assests/shoe3.png",
-    name: "Nike Running Shoe 2",
-    price: "$200",
-    lineThrough: "210 Sold Out",
-  },
-];
+import React from "react";
+import { Content } from "../Constraint";
 
 const PopularProduct = () => {
-  const [items, setItems] = useState(Content);
   return (
     <section id="popularProduct">
       <div className="container mt-10 w-auto mx-auto px-10 py-8 h-auto  ">
@@ -40,7 +9,7 @@ const PopularProduct = () => {
           Popular Products
         </h1>
         <div className=" grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 items-center  mt-6">
-          {items.map((elem) => {
+          {Content.map((elem) => {
             const { id, image, name, price, lineThrough } = elem;
 
             return (

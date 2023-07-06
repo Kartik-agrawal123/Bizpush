@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductGraph = () => {
   return (
-    <div className=" w-96 h-fit px-8 py-10 flex flex-col justify-between border-4 border-gray-100">
+    <div className=" w-96 h-fit px-8 py-10 flex flex-col justify-between border-l-4 border-gray-100">
       <div className="mb-6 bg-gray-100 w-full h-56 flex flex-col justify-between p-1 rounded-3xl">
         <div className="flex flex-row justify-between p-5 bg-white rounded-t-3xl rounde w-full h-40 mb-1">
           <div className="py-4 w-32 flex flex-col justify-between">
