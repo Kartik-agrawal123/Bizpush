@@ -12,7 +12,6 @@ const HomeScreen = () => {
       <PopularProduct />
       <Footer />
     </div>
-    
   );
 };
 

@@ -9,6 +9,16 @@ import List from "@mui/material/List";
 
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
+// import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
+import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
+import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
+import MapsUgcOutlinedIcon from '@mui/icons-material/MapsUgcOutlined';
+import TrendingUpTwoToneIcon from '@mui/icons-material/TrendingUpTwoTone';
+import PublicTwoToneIcon from '@mui/icons-material/PublicTwoTone';
+import ApartmentOutlinedIcon from '@mui/icons-material/ApartmentOutlined';
+import AddCircleTwoToneIcon from '@mui/icons-material/AddCircleTwoTone';
+import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import PeopleOutlineRoundedIcon from '@mui/icons-material/PeopleOutlineRounded';
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -242,32 +252,70 @@ export default function SideBarMenu(props) {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        {/* <List>
           {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                   
+                    {index % 2 === 0 ? <ExploreOutlinedIcon /> : <StarIcon />}
+                   
+                   
                 </ListItemIcon>
-                {/* <ListItemText primary={text} /> */}
+                <ListItemText primary={text} />
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
-        <Divider />
-        <List>
+        </List> */}
+        <div className=" ml-3 mt-1">
+        <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <ExploreOutlinedIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <StarBorderOutlinedIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <MapsUgcOutlinedIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <TrendingUpTwoToneIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <PublicTwoToneIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <ApartmentOutlinedIcon/>
+        </div>
+        
+        </div>
+        {/* <List>
           {["All mail", "Trash", "Spam"].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index % 3 === 0 ? <MapsUgcTwoToneIcon /> : <MailIcon />}
                 </ListItemIcon>
-                {/* <ListItemText primary={text} /> */}
+                <ListItemText primary={text} />
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
+        </List> */}
+        <div className=" mt-24 ml-4">
+        <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <AddCircleTwoToneIcon/>
+        </div>
+        <div className="w-10 h-10 mt-4 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <AccountCircleRoundedIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+        <PeopleOutlineRoundedIcon/>
+        </div>
+        <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-300 flex items-center justify-center bg-white">
+        <img src="assests/men.png" alt="" />
+        </div>
+        </div>
       </Drawer>
+      
       <Main open={open}>
         <DrawerHeader />
         {props.children}
