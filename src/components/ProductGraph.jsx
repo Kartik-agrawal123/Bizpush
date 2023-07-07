@@ -13,7 +13,7 @@ const ProductGraph = () => {
     setValue(newValue);
   };
   return (
-    <div className=" w-fit h-fit px-5 py-7 flex flex-col justify-between border-l-4 border-gray-100">
+    <div className="px-5 py-7 flex flex-col justify-between items-center border-l-4 border-gray-100">
       <div className="mb-6 bg-gray-100 w-fit h-44 flex flex-col justify-between p-1 rounded-3xl">
         <div className="flex flex-row justify-between p-4 bg-white rounded-t-3xl rounded w-64 h-32 mb-1">
           <div className="py-2 w-24  flex flex-col justify-between">
@@ -94,8 +94,7 @@ const ProductGraph = () => {
                   onChange={handleChanges}
                   textColor="secondary"
                   indicatorColor="secondary"
-                  aria-label="secondary tabs example"
-                >
+                  aria-label="secondary tabs example">
                   <Tab
                     style={{
                       textColor: "myColor",
