@@ -9,6 +9,16 @@ import List from "@mui/material/List";
 
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
+// import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
+import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import MapsUgcOutlinedIcon from "@mui/icons-material/MapsUgcOutlined";
+import TrendingUpTwoToneIcon from "@mui/icons-material/TrendingUpTwoTone";
+import PublicTwoToneIcon from "@mui/icons-material/PublicTwoTone";
+import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
+import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleTwoTone";
+import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
+import PeopleOutlineRoundedIcon from "@mui/icons-material/PeopleOutlineRounded";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -92,16 +102,14 @@ export default function SideBarMenu(props) {
         style={{
           backgroundColor: "white",
           padding: "10px 8px",
-        }}
-      >
+        }}>
         <Toolbar>
           <IconButton
             style={{ color: "black" }}
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
-          >
+            sx={{ mr: 2, ...(open && { display: "none" }) }}>
             <div className="h-10 w-10 flex items-center justify-center rounded-full shadow-xl">
               <MenuIcon />
             </div>
@@ -113,32 +121,27 @@ export default function SideBarMenu(props) {
             <div className="md:flex hidden lg:space-x-4 space-x-2 items-center ml-4 lg:ml-20">
               <a
                 href="/"
-                className="text-md text-black font-medium hover:text-gray-400"
-              >
+                className="text-md text-black font-medium hover:text-gray-400">
                 Dashboard
               </a>
               <a
                 href="/"
-                className="text-md text-black font-medium hover:text-gray-400"
-              >
+                className="text-md text-black font-medium hover:text-gray-400">
                 About Us
               </a>
               <a
                 href="/"
-                className="text-md text-black font-medium hover:text-gray-400"
-              >
+                className="text-md text-black font-medium hover:text-gray-400">
                 News
               </a>
               <a
                 href="/"
-                className="text-md text-black font-medium hover:text-gray-400"
-              >
+                className="text-md text-black font-medium hover:text-gray-400">
                 User Policy
               </a>
               <a
                 href="/"
-                className="text-md text-black font-medium hover:text-gray-400"
-              >
+                className="text-md text-black font-medium hover:text-gray-400">
                 Contact
               </a>
             </div>
@@ -165,8 +168,7 @@ export default function SideBarMenu(props) {
                     stroke="#9e9e9e"
                     fill="none"
                     stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
+                    stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                     <path d="M21 21l-6 -6" />
@@ -185,8 +187,7 @@ export default function SideBarMenu(props) {
                   stroke="#9e9e9e"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
+                  stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                   <path d="M21 21l-6 -6" />
@@ -210,8 +211,7 @@ export default function SideBarMenu(props) {
                   stroke="#9e9e9e"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
+                  stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
                   <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
@@ -243,8 +243,7 @@ export default function SideBarMenu(props) {
         }}
         variant="persistent"
         anchor="left"
-        open={open}
-      >
+        open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
@@ -255,32 +254,61 @@ export default function SideBarMenu(props) {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        {/* <List>
           {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                   
+                    {index % 2 === 0 ? <ExploreOutlinedIcon /> : <StarIcon />}
+                   
+                   
                 </ListItemIcon>
-                {/* <ListItemText primary={text} /> */}
+                <ListItemText primary={text} />
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
-        <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                {/* <ListItemText primary={text} /> */}
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+        </List> */}
+
+        <div className="max-h-screen flex flex-col justify-center">
+          <div className="mt-4 ml-4">
+            <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <ExploreOutlinedIcon />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <StarBorderOutlinedIcon />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <MapsUgcOutlinedIcon />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <TrendingUpTwoToneIcon />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <PublicTwoToneIcon />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <ApartmentOutlinedIcon />
+            </div>
+          </div>
+
+          <div className="mt-40 ml-4">
+            <div className="w-10 h-10 mt-1 rounded-3xl overflow-hidden  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <img src="assests/user-6.jpg" alt="" />
+            </div>
+            <div className="w-10 h-10 mt-4 rounded-3xl overflow-hidden border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <img src="assests/user-8.jpg" alt="" />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl overflow-hidden border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+              <img src="assests/user-9.jpg" alt="" />
+            </div>
+            <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-300 flex items-center justify-center bg-white">
+              <img src="assests/men.png" alt="" />
+            </div>
+          </div>
+        </div>
       </Drawer>
+
       <Main open={open}>
         <DrawerHeader />
         {props.children}

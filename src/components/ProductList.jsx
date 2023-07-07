@@ -1,107 +1,44 @@
 import React from "react";
-import { useState } from "react";
 import CheckBox from "./CheckBox";
-
-const Carts = [
-  {
-    id: "1",
-    image: "/assests/airpods.png",
-    name: "Apple AirPods 2",
-  },
-  {
-    id: "2",
-    image: "/assests/watch.png",
-    name: "Samsung Smart Watch",
-  },
-  {
-    id: "3",
-    image: "/assests/pc.png",
-    name: "Apple Macbook Pro",
-  },
-  {
-    id: "4",
-    image: "/assests/watch.png",
-    name: "Samsung Smart Watch",
-  },
-  {
-    id: "5",
-    image: "/assests/phone.png",
-    name: "Google Pixel 4 XL",
-  },
-  {
-    id: "6",
-    image: "/assests/airpods.png",
-    name: "Amazon Smart Speaker",
-  },
-  {
-    id: "7",
-    image: "/assests/laptop.png",
-    name: "Apple Macbook Pro 18",
-  },
-  {
-    id: "8",
-    image: "/assests/laptop.png",
-    name: "Apple IPad 2",
-  },
-  {
-    id: "9",
-    image: "/assests/airpods.png",
-    name: "Microsoft Surface Book",
-  },
-  {
-    id: "10",
-    image: "/assests/airpods.png",
-    name: "Google",
-  },
-  {
-    id: "11",
-    image: "/assests/laptop.png",
-    name: "Apple Mac Pro",
-  },
-  {
-    id: "12",
-    image: "/assests/watch.png",
-    name: "Samsung Smart Watch",
-  },
-];
+import { Carts } from "../Constraint";
 
 const ProductList = () => {
-  const [carts, setCarts] = useState(Carts);
-
   return (
     <>
-      <div className="flex justify-between space-x-10 ">
-        <div className="container w-full h-auto grid grid-cols-4 gap-3">
-          {carts.map((elem) => {
+      <div className=" container px-10 py-8">
+        <div className="grid grid-cols-1 items-center  gap-10 md:grid-cols-2 lg:grid-cols-4 ">
+          {Carts.map((elem) => {
             const { id, image, name } = elem;
 
             return (
               <>
-                <div className="container w-56 h-64 rounded-2xl bg-gray-50">
+                <div
+                  key={id}
+                  className="w-full shadow-md rounded-lg bg-gray-50 border-2">
                   <div className="relative left-5 top-2">
                     <CheckBox />
                   </div>
-                  <div className=" flex items-center justify-center container w-52 h-36 mt-2 ml-2">
+                  <div className="flex items-center justify-center  w-full h-36">
                     <img src={image} alt="" className="w-18 h-24" />
                   </div>
-                  <div className=" container w-56 h-20 mt-1">
-                    <h2 className="ml-8 px-2 py-2">{name}</h2>
-                    <button className=" bg-white ml-20 rounded-2xl px-1">
-                      $600
-                    </button>
+                  <div className="flex flex-col justify-center bg-gray-50 h-20">
+                    <h2 className="text-center">{name}</h2>
+                    <div className="flex justify-center">
+                      <button className=" bg-white w-20 px-2 py-1  rounded-lg shadow-lg hover:cursor-pointer">
+                        $600
+                      </button>
+                    </div>
                   </div>
                 </div>
               </>
             );
           })}
-          <div className="flex w-full justify-center">
-            <button className="border-2 border-gray-100 w-24 h-8 bg-white rounded-2xl px-1">
-              Load More
-            </button>
-          </div>
         </div>
-
-        <div>{/* <ProductGraph /> */}</div>
+      </div>
+      <div className="mx-auto w-40">
+        <button className="border-2 border-gray-300 text-violet-500 px-4 py-2 bg-white rounded-lg shadow-lg">
+          Load More...
+        </button>
       </div>
     </>
   );
