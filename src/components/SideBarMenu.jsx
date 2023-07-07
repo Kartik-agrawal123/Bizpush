@@ -270,7 +270,7 @@ export default function SideBarMenu(props) {
           ))}
         </List> */}
 
-        <div className="max-h-screen flex flex-col justify-center">
+        <div className="flex flex-col justify-center">
           <div className="mt-4 ml-4">
             <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
               <ExploreOutlinedIcon />
