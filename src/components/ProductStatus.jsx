@@ -8,6 +8,7 @@ import Select from "@mui/material/Select";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import { padding } from "@mui/system";
 
 export default function ProductStatus(props) {
   const [productStatus, setProductStatus] = React.useState("active");
@@ -27,7 +28,9 @@ export default function ProductStatus(props) {
       {props.status === "radio" && (
         <Box sx={{ width: "100%" }}>
           <Tabs
-            style={{ fontWeight: "bold" }}
+            style={{
+              fontWeight: "bold",
+            }}
             value={value}
             onChange={handleChanges}
             textColor="secondary"
@@ -35,13 +38,30 @@ export default function ProductStatus(props) {
             aria-label="secondary tabs example"
           >
             <Tab
-              style={{ fontWeight: "bolder" }}
+              style={{
+                textColor: "myColor",
+                fontWeight: "bolder",
+                textTransform: "capitalize",
+                paddingBottom: "2rem",
+              }}
               value="active"
               label="Active"
             />
-            <Tab style={{ fontWeight: "bolder" }} value="draft" label="Draft" />
             <Tab
-              style={{ fontWeight: "bolder" }}
+              style={{
+                fontWeight: "bolder",
+                textTransform: "capitalize",
+                paddingBottom: "2rem",
+              }}
+              value="draft"
+              label="Draft"
+            />
+            <Tab
+              style={{
+                fontWeight: "bolder",
+                textTransform: "capitalize",
+                paddingBottom: "2rem",
+              }}
               value="assemble"
               label="Assemble"
             />

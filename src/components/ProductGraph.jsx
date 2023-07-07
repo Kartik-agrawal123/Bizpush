@@ -1,6 +1,17 @@
 import React from "react";
+import FormControl from "@mui/material/FormControl";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
 
 const ProductGraph = () => {
+  const [value, setValue] = React.useState("actions");
+
+  const handleChanges = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <div className=" w-96 h-fit px-8 py-10 flex flex-col justify-between border-4 border-gray-100">
       <div className="mb-6 bg-gray-100 w-full h-56 flex flex-col justify-between p-1 rounded-3xl">
@@ -69,8 +80,40 @@ const ProductGraph = () => {
       <div className="bg-gray-100 w-full h-fit flex flex-col justify-between p-1 rounded-3xl">
         <div className="flex flex-col justify-between p-5 bg-white rounded-3xl rounde w-full h-full">
           <div className="w-full h-10 mb-3 flex flex-row items-center justify-between">
-            <div className="text-sm font-bold text-gray-700">Actions</div>
-            <div className="text-sm font-bold text-purple-700 ml-5">Orders</div>
+            <div className="w-fit flex flex-row items-center justify-between">
+              <Box sx={{ width: "100%" }}>
+                <Tabs
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                  value={value}
+                  onChange={handleChanges}
+                  textColor="secondary"
+                  indicatorColor="secondary"
+                  aria-label="secondary tabs example"
+                >
+                  <Tab
+                    style={{
+                      textColor: "myColor",
+                      fontWeight: "bolder",
+                      textTransform: "capitalize",
+                      paddingBottom: "2rem",
+                    }}
+                    value="actions"
+                    label="Actions"
+                  />
+                  <Tab
+                    style={{
+                      fontWeight: "bolder",
+                      textTransform: "capitalize",
+                      paddingBottom: "2rem",
+                    }}
+                    value="orders"
+                    label="Orders"
+                  />
+                </Tabs>
+              </Box>
+            </div>
             <div className="ml-auto w-1">
               <img src="assests/3dots.png" alt="3 Dots" srcset="" />
             </div>
