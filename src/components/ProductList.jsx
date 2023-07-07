@@ -24,7 +24,9 @@ const ProductList = () => {
                           style={{ color: "#e5e7eb" }}
                         />
                       }
-                      checkedIcon={<CheckCircleIcon />}
+                      checkedIcon={
+                        <CheckCircleIcon style={{ color: "#8833FF" }} />
+                      }
                     />
                   </div>
                   <div className="flex items-center justify-center  w-full h-36">

@@ -17,6 +17,11 @@ module.exports = {
       screens: {
         "2xl": "1380px", // Custom breakpoint
       },
+
+      fontSize: {
+        ss: "0.5rem",
+        ts: "0.65rem",
+      },
     },
   },
   plugins: [],

@@ -207,8 +207,8 @@ export default function SideBarMenu(props) {
               </div>
               {/* user icon */}
               <div className="flex items-center space-x-2">
-                <img src={userImg} alt="user" className="w-10 h-10" />
-                <span className="text-sm font-medium text-myColor">
+                <img src={userImg} alt="user" className="w-6 h-6" />
+                <span className="text-xs font-medium text-myColor">
                   Clayton Santos
                 </span>
               </div>
