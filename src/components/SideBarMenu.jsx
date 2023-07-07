@@ -6,6 +6,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
+import CancelIcon from "@mui/icons-material/Cancel";
+import Badge from "@mui/material/Badge";
 
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
@@ -104,14 +106,16 @@ export default function SideBarMenu(props) {
           padding: "10px 8px",
           boxShadow: "none",
           borderBottom: "0.25rem solid #F3F4F6",
-        }}>
+        }}
+      >
         <Toolbar>
           <IconButton
             style={{ color: "black" }}
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}>
+            sx={{ mr: 2, ...(open && { display: "none" }) }}
+          >
             <div className="h-10 w-10 flex items-center justify-center rounded-full shadow-md">
               <MenuIcon />
             </div>
@@ -123,27 +127,32 @@ export default function SideBarMenu(props) {
             <div className="md:flex hidden lg:space-x-4 space-x-2 items-center ml-4 lg:ml-20">
               <a
                 href="/"
-                className="text-myDash font-semibold hover:text-gray-400 text-xs">
+                className="text-myDash font-semibold hover:text-gray-400 text-xs"
+              >
                 Dashboard
               </a>
               <a
                 href="/"
-                className=" text-myDash font-semibold hover:text-gray-400 text-xs">
+                className=" text-myDash font-semibold hover:text-gray-400 text-xs"
+              >
                 About Us
               </a>
               <a
                 href="/"
-                className=" text-myDash font-semibold hover:text-gray-400 text-xs">
+                className=" text-myDash font-semibold hover:text-gray-400 text-xs"
+              >
                 News
               </a>
               <a
                 href="/"
-                className=" text-myDash font-semibold hover:text-gray-400 text-xs">
+                className=" text-myDash font-semibold hover:text-gray-400 text-xs"
+              >
                 User Policy
               </a>
               <a
                 href="/"
-                className=" text-myDash font-semibold hover:text-gray-400 text-xs">
+                className=" text-myDash font-semibold hover:text-gray-400 text-xs"
+              >
                 Contact
               </a>
             </div>
@@ -151,7 +160,7 @@ export default function SideBarMenu(props) {
               <DropdownMenuList />
             </div> */}
 
-            <div className="flex flex-row space-x-2 lg:space-x-4">
+            <div className="flex flex-row items-center space-x-2 lg:space-x-4">
               {/* search box */}
               <div className="rounded-full lg:flex shadow-md hidden items-center px-4 py-4 border-1 border-gray-100 w-fit">
                 <div>
@@ -165,7 +174,8 @@ export default function SideBarMenu(props) {
                     stroke="#9e9e9e"
                     fill="none"
                     stroke-linecap="round"
-                    stroke-linejoin="round">
+                    stroke-linejoin="round"
+                  >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                     <path d="M21 21l-6 -6" />
@@ -190,7 +200,8 @@ export default function SideBarMenu(props) {
                   stroke="#9e9e9e"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round">
+                  stroke-linejoin="round"
+                >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                   <path d="M21 21l-6 -6" />
@@ -205,22 +216,31 @@ export default function SideBarMenu(props) {
               </div>
               {/* bell icon */}
 
+              <Badge color="error" variant="dot">
+                <div className="rounded-full w-10 h-10 shadow-md flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-bell"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#9e9e9e"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                  </svg>
+                </div>
+              </Badge>
+
+              {/* Cross icon */}
+
               <div className="rounded-full w-10 h-10 shadow-md flex justify-center items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-bell"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#9e9e9e"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-                  <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-                </svg>
+                <CancelIcon style={{ color: "#9ca3af" }} />
               </div>
             </div>
           </div>
@@ -248,7 +268,8 @@ export default function SideBarMenu(props) {
         }}
         variant="persistent"
         anchor="left"
-        open={open}>
+        open={open}
+      >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
@@ -276,38 +297,47 @@ export default function SideBarMenu(props) {
         </List> */}
 
         <div className="flex flex-col justify-center">
-          <div className="mt-4 ml-4">
+          <div className="mt-4  space-y-2 flex flex-col items-center">
             <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
-              <ExploreOutlinedIcon />
+              <ExploreOutlinedIcon style={{ color: "#9ca3af" }} />
             </div>
             <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
-              <StarBorderOutlinedIcon />
+              <StarBorderOutlinedIcon style={{ color: "#9ca3af" }} />
             </div>
-            <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
-              <MapsUgcOutlinedIcon />
+            <div>
+              <Badge color="error" variant="dot">
+                <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+                  <img
+                    src="assests/messenger.png"
+                    className="w-6 h-6 overflow-hidden"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </Badge>
             </div>
             <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
-              <TrendingUpTwoToneIcon />
+              <TrendingUpTwoToneIcon style={{ color: "#9ca3af" }} />
             </div>
             <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
-              <PublicTwoToneIcon />
+              <PublicTwoToneIcon style={{ color: "#9ca3af" }} />
             </div>
             <div className="w-10 h-10 mt-1 rounded-3xl  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
-              <ApartmentOutlinedIcon />
+              <ApartmentOutlinedIcon style={{ color: "#9ca3af" }} />
             </div>
           </div>
 
-          <div className="mt-40 ml-4">
-            <div className="w-10 h-10 mt-1 rounded-3xl overflow-hidden  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+          <div className="mt-32 flex flex-col items-center space-y-2">
+            <div className="w-10 h-10 rounded-3xl overflow-hidden  border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
               <img src="assests/user-6.jpg" alt="" />
             </div>
-            <div className="w-10 h-10 mt-4 rounded-3xl overflow-hidden border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+            <div className="w-10 h-10  rounded-3xl overflow-hidden border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
               <img src="assests/user-8.jpg" alt="" />
             </div>
-            <div className="w-10 h-10 mt-1 rounded-3xl overflow-hidden border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
+            <div className="w-10 h-10  rounded-3xl overflow-hidden border-gray-400 shadow-xl shadow-gray-200 flex items-center justify-center bg-white">
               <img src="assests/user-9.jpg" alt="" />
             </div>
-            <div className="w-10 h-10 mt-1 rounded-3xl border-gray-400 shadow-xl shadow-gray-300 flex items-center justify-center bg-white">
+            <div className="w-10 h-10  rounded-3xl border-gray-400 shadow-xl shadow-gray-300 flex items-center justify-center bg-white">
               <img src="assests/men.png" alt="" />
             </div>
           </div>

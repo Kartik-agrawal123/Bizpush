@@ -21,7 +21,7 @@ const ProductAction = () => {
           />
           <span className="hidden lg:block">Select All</span>
         </div>
-        <div className="rounded-lg shadow-lg px-4 py-2 flex space-x-4 ">
+        <div className="rounded-lg border-2 border-gray-100 px-4 py-2 flex space-x-4 ">
           {/* filter */}
           <div className="flex items-center space-x-1">
             <FilterListIcon style={{ color: "#C3CAD9" }} />
@@ -54,7 +54,7 @@ const ProductAction = () => {
             </span>
           </div>
         </div>
-        <div className="rounded-lg shadow-lg px-4 py-2 flex space-x-4 ">
+        <div className="rounded-lg border-2 border-gray-100 px-4 py-2 flex space-x-4 ">
           <div className="flex items-center space-x-1">
             <ListIcon style={{ color: "#C3CAD9" }} />
           </div>
