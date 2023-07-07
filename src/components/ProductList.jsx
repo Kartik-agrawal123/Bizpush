@@ -7,7 +7,7 @@ import { Carts } from "../Constraint";
 const ProductList = () => {
   return (
     <>
-      <div className=" container px-10 py-8">
+      <div className="container px-10 py-8">
         <div className="grid grid-cols-1 items-center  gap-10 md:grid-cols-2 lg:grid-cols-4 ">
           {Carts.map((elem) => {
             const { id, image, name } = elem;
@@ -15,7 +15,8 @@ const ProductList = () => {
               <>
                 <div
                   key={id}
-                  className="w-full relative shadow-md rounded-md bg-gray-50 px-4 py-4 border-1">
+                  className="w-full relative shadow-md rounded-md bg-gray-50 px-4 py-4 border-1"
+                >
                   <div className="absolute left-0 top-0">
                     <Checkbox
                       icon={
@@ -23,7 +24,9 @@ const ProductList = () => {
                           style={{ color: "#e5e7eb" }}
                         />
                       }
-                      checkedIcon={<CheckCircleIcon />}
+                      checkedIcon={
+                        <CheckCircleIcon style={{ color: "#8833FF" }} />
+                      }
                     />
                   </div>
                   <div className="flex items-center justify-center  w-full h-36">

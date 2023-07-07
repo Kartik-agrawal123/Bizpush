@@ -11,10 +11,16 @@ module.exports = {
         customBlue: "#D7FFFF",
         textColorRed: "#E142AA",
         textColorBlue: "#73FFFF",
-        myColor: "red",
+        myColor: "#525E7C",
+        myDash: "rgb(149,159,183)",
       },
       screens: {
         "2xl": "1380px", // Custom breakpoint
+      },
+
+      fontSize: {
+        ss: "0.5rem",
+        ts: "0.65rem",
       },
     },
   },
