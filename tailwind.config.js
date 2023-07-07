@@ -14,6 +14,9 @@ module.exports = {
         myColor: "#525E7C",
         myDash: "rgb(149,159,183)",
       },
+      screens: {
+        "2xl": "1380px", // Custom breakpoint
+      },
     },
   },
   plugins: [],
