@@ -14,42 +14,42 @@ const ProductGraph = () => {
   };
   return (
     <div className=" w-96 h-fit px-8 py-10 flex flex-col justify-between border-l-4 border-gray-100">
-      <div className="mb-6 bg-gray-100 w-full h-56 flex flex-col justify-between p-1 rounded-3xl">
-        <div className="flex flex-row justify-between p-5 bg-white rounded-t-3xl rounde w-full h-40 mb-1">
-          <div className="py-4 w-32 flex flex-col justify-between">
-            <div className="text-sm font-medium text-gray-700">Total Sales</div>
-            <div className="text-3xl font-semibold text-gray-700">$281.90</div>
+      <div className="mb-6 bg-gray-100 w-fit h-44 flex flex-col justify-between p-1 rounded-3xl">
+        <div className="flex flex-row justify-between p-4 bg-white rounded-t-3xl rounded w-64 h-32 mb-1">
+          <div className="py-2 w-24  flex flex-col justify-between">
+            <div className="text-xs font-medium text-gray-700">Total Sales</div>
+            <div className="text-2xl font-semibold text-gray-700">$281.90</div>
           </div>
-          <div className="w-32 flex items-center">
+          <div className="w-28 flex items-center">
             <img src="assests/graph3.png" alt="graph" />
           </div>
         </div>
-        <div className="bg-white rounded-b-3xl w-full h-16 px-5 items-center flex flex-row justify-between">
-          <div className="text-sm font-medium text-gray-700">
+        <div className="bg-white rounded-b-3xl w-64 h-12 px-5 items-center flex flex-row justify-between">
+          <div className="text-xs font-medium text-gray-700">
             & total orders
           </div>
-          <div className="text-sm font-medium text-gray-700">View report</div>
+          <div className="text-xs font-medium text-gray-700">View report</div>
         </div>
       </div>
 
-      <div className="mb-6 bg-gray-100 w-full h-56 flex flex-col justify-between p-1 rounded-3xl">
-        <div className="flex flex-row justify-between p-5 bg-white rounded-t-3xl rounde w-full h-40 mb-1">
-          <div className="py-4 w-32 flex flex-col justify-between">
-            <div className="text-sm font-medium text-gray-700">
+      <div className="mb-6 bg-gray-100 w-fit h-44 flex flex-col justify-between p-1 rounded-3xl">
+        <div className="flex flex-row justify-between p-5 bg-white rounded-t-3xl rounded w-64 h-32 mb-1">
+          <div className="py-2 w-24 flex flex-col justify-between">
+            <div className="text-xs font-medium text-gray-700">
               Total Sessions
             </div>
-            <div className="text-3xl font-semibold text-gray-700">456</div>
+            <div className="text-2xl font-semibold text-gray-700">456</div>
           </div>
           <div className="w-32 flex items-center">
             <img src="assests/graph1.png" alt="graph" />
           </div>
         </div>
-        <div className="bg-white rounded-b-3xl w-full h-16 px-5 items-center flex flex-row justify-between">
-          <div className="text-sm font-extrabold flex items-center bg-purple-200 py-1.5 px-4 text-purple-700 rounded-md">
+        <div className="bg-white rounded-b-3xl w-64 h-12 px-5 items-center flex flex-row justify-between">
+          <div className="text-xs font-extrabold flex items-center bg-purple-200 py-1.5 px-4 text-purple-700 rounded-md">
             Live
           </div>
-          <div className="text-sm font-medium text-gray-700">4 visitors</div>
-          <div className="text-sm font-medium text-gray-700">See Live View</div>
+          <div className="text-xs font-medium text-gray-700">4 visitors</div>
+          <div className="text-xs font-medium text-gray-700">See Live View</div>
         </div>
       </div>
 

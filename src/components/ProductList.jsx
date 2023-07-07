@@ -5,7 +5,7 @@ import { Carts } from "../Constraint";
 const ProductList = () => {
   return (
     <>
-      <div className=" container px-10 py-8">
+      <div className="container px-10 py-8">
         <div className="grid grid-cols-1 items-center  gap-10 md:grid-cols-2 lg:grid-cols-4 ">
           {Carts.map((elem) => {
             const { id, image, name } = elem;
@@ -14,7 +14,8 @@ const ProductList = () => {
               <>
                 <div
                   key={id}
-                  className="w-full shadow-md rounded-lg bg-gray-50 border-2">
+                  className="w-full shadow-md rounded-lg bg-gray-50 border-2"
+                >
                   <div className="relative left-5 top-2">
                     <CheckBox />
                   </div>

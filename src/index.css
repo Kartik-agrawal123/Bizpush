@@ -11,3 +11,7 @@
 .grad {
   background-image: linear-gradient(to right, #ffdcf3, #d7ffff);
 }
+
+.my-input::placeholder {
+  font-size: 0.65rem;
+}
