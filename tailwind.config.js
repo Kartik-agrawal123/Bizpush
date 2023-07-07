@@ -13,6 +13,9 @@ module.exports = {
         textColorBlue: "#73FFFF",
         myColor: "red",
       },
+      screens: {
+        "2xl": "1380px", // Custom breakpoint
+      },
     },
   },
   plugins: [],

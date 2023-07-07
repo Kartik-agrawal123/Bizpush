@@ -13,7 +13,7 @@ const ShopScreen = () => {
     <>
       <SideBarMenu>
         <section className="lg:flex block lg:space-x-8">
-          <div className="lg:w-3/4">
+          <div className="2xl:w-3/4">
             <div className="container px-10 py-8">
               {/* header */}
               <div className="flex justify-between w-full">
@@ -63,7 +63,7 @@ const ShopScreen = () => {
             <ProductAction />
             <ProductList />
           </div>
-          <div className="w-1/4 hidden lg:block h-screen">
+          <div className="w-1/4 hidden 2xl:block h-screen">
             <ProductGraph />
           </div>
         </section>
