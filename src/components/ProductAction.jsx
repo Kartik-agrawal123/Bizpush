@@ -25,7 +25,7 @@ const ProductAction = () => {
           {/* filter */}
           <div className="flex items-center space-x-1">
             <FilterListIcon style={{ color: "#C3CAD9" }} />
-            <span className="text-lg hidden lg:block font-medium text-gray-400">
+            <span className="text-sm hidden lg:block font-bold text-textCustom">
               Filter
             </span>
           </div>
@@ -33,7 +33,7 @@ const ProductAction = () => {
           {/* search */}
           <div className="flex items-center space-x-1">
             <SearchIcon style={{ color: "#C3CAD9" }} />
-            <span className="text-lg hidden lg:block font-medium text-gray-400">
+            <span className="text-sm hidden lg:block font-bold text-textCustom">
               Search
             </span>
           </div>
@@ -41,7 +41,7 @@ const ProductAction = () => {
           {/* edit */}
           <div className="flex items-center space-x-1">
             <EditIcon style={{ color: "#C3CAD9" }} />
-            <span className="text-lg hidden lg:block font-medium text-gray-400">
+            <span className="text-sm hidden lg:block font-bold text-textCustom">
               Edit
             </span>
           </div>
@@ -49,7 +49,7 @@ const ProductAction = () => {
           {/* delete */}
           <div className="flex items-center space-x-1">
             <DeleteIcon style={{ color: "#C3CAD9" }} />
-            <span className="text-lg hidden lg:block font-medium text-gray-400">
+            <span className="text-sm hidden lg:block font-bold text-textCustom">
               Delete
             </span>
           </div>

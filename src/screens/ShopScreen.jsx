@@ -13,8 +13,8 @@ const ShopScreen = () => {
     <>
       <SideBarMenu>
         <section className="lg:flex block lg:space-x-8">
-          <div className="p-8">
-            <div className="2xl:w-3/4 rounded-3xl shadow-md pb-2">
+          <div className="2xl:w-3/4 p-8">
+            <div className="w-full rounded-3xl shadow-sm border-2 border-gray-100 pb-2">
               <div className="container px-10 py-8">
                 {/* header */}
                 <div className="flex justify-between w-full">
@@ -44,8 +44,7 @@ const ShopScreen = () => {
                         stroke="#9e9e9e"
                         fill="none"
                         stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
+                        stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M9 12h6" />
                         <path d="M12 9v6" />

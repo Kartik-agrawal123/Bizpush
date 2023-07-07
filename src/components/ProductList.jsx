@@ -15,13 +15,17 @@ const ProductList = () => {
               <>
                 <div
                   key={id}
-                  className="w-full relative shadow-md rounded-md bg-gray-50 px-4 py-4 border-1"
-                >
+                  className="w-full relative shadow-md rounded-md bg-gray-50 px-4 py-4 border-1">
                   <div className="absolute left-0 top-0">
                     <Checkbox
                       icon={
                         <RadioButtonUncheckedIcon
-                          style={{ color: "#e5e7eb" }}
+                          // style={{ color: "#e5e7eb" }}
+                          style={{
+                            color: "#e5e7eb",
+                            backgroundColor: "white",
+                            borderRadius: "50%",
+                          }}
                         />
                       }
                       checkedIcon={
@@ -37,8 +41,8 @@ const ProductList = () => {
                       {name}
                     </p>
                     <div className="flex justify-center">
-                      <button className=" bg-white text-sm  px-2 py-1  rounded-full shadow-md hover:cursor-pointer">
-                        $600
+                      <button className=" bg-white   px-4 py-2 text-textCustom  rounded-full shadow-md hover:cursor-pointer">
+                        <span className="text-xs font-bold">$600</span>
                       </button>
                     </div>
                   </div>
