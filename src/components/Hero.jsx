@@ -6,7 +6,7 @@ const Hero = () => {
 
   return (
     <section id="herosection">
-      <div className="container  max-w-6xl mx-auto px-10 py-8 text-black  h-auto">
+      <div className="container  max-w-6xl mx-auto px-10 py-8 text-black h-auto">
         <div className=" flex flex-col space-y-10 items-center justify-center md:flex-row md:space-x-10 md:space-y-0">
           <div className="lg:w-2/4 w-full  h-fit flex flex-col items-start justify-start ">
             <div className="lg:text-5xl text-3xl  text-indigo-400 font-extrabold w-2/4 lg:w-4/5">
@@ -35,7 +35,7 @@ const Hero = () => {
                     <div className="flex flex-row w-24 justify-between ml-1 h-fit">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -73,7 +73,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -92,7 +92,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -111,7 +111,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -142,7 +142,7 @@ const Hero = () => {
                     <div className="flex flex-row w-24 justify-between ml-1 h-fit">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -161,7 +161,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -180,7 +180,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -199,7 +199,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"
@@ -218,7 +218,7 @@ const Hero = () => {
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-star-filled"
+                        class="icon icon-tabler text-pink-600 icon-tabler-star-filled"
                         width="14"
                         height="44"
                         viewBox="0 0 24 24"

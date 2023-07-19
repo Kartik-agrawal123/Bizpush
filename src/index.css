@@ -10,6 +10,7 @@
 
 .grad {
   background-image: linear-gradient(to right, #ffdcf3, #d7ffff);
+  padding: 0.15rem;
 }
 
 .my-input::placeholder {
